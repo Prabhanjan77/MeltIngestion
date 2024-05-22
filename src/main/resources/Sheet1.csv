@@ -1,9 +1,0 @@
-type,name,type,value,attributes,interval.ms,timestamp
-metrics,memory.heap,gauge,2.3,"{""host.name"":""dev.server.com""}",,
-metrics,service.errors.all,count,15,"{""service.response.statuscode"":""400"",""host.name"":""dev.server.com"",""service.name"":""foo""}",10000,
-metrics,service.memory,gauge,2.7,"{""host.name"":""dev.server.com"",""app.name"":""foo""}",,
-metrics,cache.misses,count,15,"{""cache.name"":""myCache"",""host.name"":""dev.server.com""}",,
-metrics,temperature,gauge,15,"{""attributes"":{""city"":""Portland"",""state"":""Oregon""}}",,
-metrics,service.response.duration,summary,"{""count"":5,""sum"":0.004382655,""min"":0.0005093,""max"":0.001708826}","{""host.name"":""dev.server.com"",""app.name"":""foo""}",10000,
-metrics,service.errors.all,count,9,"{""service.response.statuscode"":""400"",""app.name"":""foo"",""host.name"":""dev.server.com""}",10000,1531414060739
-metrics,service.response.duration,summary,"{""count"":5,""sum"":0.004382655,""min"":0.0005093,""max"":0.001708826}","{""service.response.statuscode"":""400"",""app.name"":""foo"",""host.name"":""dev.server.com""}",10000,1531414060739

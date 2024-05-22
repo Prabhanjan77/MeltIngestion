@@ -1,0 +1,21 @@
+type,name,type,value,attributes,interval.ms,eventType,account,category,amount,description,message,id,trace.id
+metrics,memory.heap,gauge,2.3,"{""host.name"":""new.server.com""}",,,,,,,,,
+metrics,service.errors.all,count,15,"{""service.response.statuscode"":""400"",""host.name"":""new.server.com"",""service.name"":""foo""}",10000,,,,,,,,
+metrics,service.memory,gauge,2.7,"{""host.name"":""new.server.com"",""app.name"":""foo""}",,,,,,,,,
+metrics,cache.misses,count,15,"{""cache.name"":""myCache"",""host.name"":""new.server.com""}",10000,,,,,,,,
+metrics,temperature,gauge,15,"{""city"":""Portland"",""state"":""Oregon""}",,,,,,,,,
+metrics,service.response.duration,summary,"{""count"":5,""sum"":0.004382655,""min"":0.0005093,""max"":0.001708826}","{""host.name"":""dev.server.com"",""app.name"":""foo""}",10000,,,,,,,,
+metrics,service.errors.all,count,9,"{""service.response.statuscode"":""400"",""app.name"":""foo"",""host.name"":""new.server.com""}",10000,,,,,,,,
+metrics,service.response.duration,summary,"{""count"":5,""sum"":0.004382655,""min"":0.0005093,""max"":0.001708826}","{""service.response.statuscode"":""400"",""app.name"":""foo"",""host.name"":""new.server.com""}",10000,,,,,,,,
+events,,,,,,Search,2,Electronics,,,,,
+events,,,,,,AddToCart,2,TV,23000,,,,
+events,,,,,,Purchase,2,TV,23000,,,,
+events,,,,,,Delivered,2,TV,23000,,,,
+events,,,,,,Return,2,TV,23000,"""Item is damaged""",,,
+logs,,,,,,,,,,,User 'efg' logged in,,
+logs,,,,,,,,,,,User 'efg' searched for Electronics,,
+logs,,,,"{""cartId"":12334}",,,,,,,User 'efg' added Item to Cart,,
+logs,,,," {""auditId"": 123}",,,,,,,User 'efg' logged out,,
+traces,,,,"{""duration.ms"":12.53,""name"":""/app""}",,,,,,,,ABC,123
+traces,,,,"{""error.message"":""Invalid credentials"",""service.name"":""Search Service"",""host"":""host4561.example.com"",""duration.ms"":2.97,""name"":""/auth"",""parent.id"":""ABC""}",,,,,,,,DEF,12345
+traces,,,,"{""error.message"":""Too Many Requests"",""service.name"":""Search Service"",""host"":""host4561.example.com"",""duration.ms"":2.97,""name"":""/auth"",""parent.id"":""ABC""}",,,,,,,,XYZ,123455
